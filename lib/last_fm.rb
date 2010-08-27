@@ -1,7 +1,9 @@
+require 'rubygems'
 require 'net/http'
 require 'cgi'
 require 'uri'
 require 'pp'
+require 'json'
 
 class LastFm
 
@@ -23,9 +25,11 @@ class LastFm
       params ||= []
       params[:method] = method_name
       params[:api_key] = @api_key
+      params[:format] = 'json'
 
       api_url = URI.parse(API_URL)
-      http_get(api_url.host, api_url.path, params)
+      response = http_get(api_url.host, api_url.path, params)
+      JSON.parse(response);
     end
 
 

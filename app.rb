@@ -3,6 +3,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'logger'
+require 'pp'
 
 require 'helpers'
 
