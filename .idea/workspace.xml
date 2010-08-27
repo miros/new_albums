@@ -23,35 +23,7 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="80" selection-end="80" vertical-scroll-proportion="0.13669065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -63,8 +35,14 @@
       <list>
         <option value="$PROJECT_DIR$/views/index.html.haml" />
         <option value="$PROJECT_DIR$/views/layout.haml" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/helpers.rb" />
+        <option value="$PROJECT_DIR$/views/index.haml" />
+        <option value="$PROJECT_DIR$/config.ru" />
+        <option value="$PROJECT_DIR$/sinatra.log" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/test.rb" />
+        <option value="$PROJECT_DIR$/lib/last_fm.rb" />
+        <option value="$PROJECT_DIR$/views/groups.haml" />
       </list>
     </option>
   </component>
@@ -110,6 +88,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -209,20 +201,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -230,9 +208,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.13669065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.02733813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinatra.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/groups.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="0.02733813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="80" selection-end="80" vertical-scroll-proportion="0.13669065">
+        <state line="31" column="13" selection-start="486" selection-end="486" vertical-scroll-proportion="0.75395685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="141" selection-end="141" vertical-scroll-proportion="0.05467626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/last_fm.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="231" selection-end="231" vertical-scroll-proportion="0.055882353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="73" selection-start="186" selection-end="186" vertical-scroll-proportion="0.10935252">
           <folding />
         </state>
       </provider>

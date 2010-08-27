@@ -1,2 +1,6 @@
-%h1
-  Hello
+%div
+  %form{:action => '/groups', :method => :post}
+    %label{:for => :last_fm_login}
+      Your Last.fm login
+    %input{:type => :text, :id => :last_fm_login, :name => :last_fm_login}
+    %input{:type => :submit, :value => 'OK'}
