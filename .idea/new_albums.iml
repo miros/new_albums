@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="DBNavigator.Module.ConnectionManager">
+    <connections />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sinatra (v1.0, /usr/lib/ruby/gems/1.8/gems/sinatra-1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.1.0, /usr/lib/ruby/gems/1.8/gems/rack-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.0.17, /usr/lib/ruby/gems/1.8/gems/haml-3.0.17)" level="application" />
+  </component>
+</module>
+
