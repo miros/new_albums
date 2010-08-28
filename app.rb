@@ -10,7 +10,7 @@ require 'helpers'
 require 'lib/last_fm'
 
 configure do
-  log = File.new("logs/sinatra.log", "a+")
+  log = File.new(File.basedir(__FILE__)  + "/logs/sinatra.log", "a+")
   LOGGER = Logger.new(log)
 end
 
