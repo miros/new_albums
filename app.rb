@@ -9,18 +9,21 @@ require 'helpers'
 
 require 'lib/last_fm'
 
-#configure do
-  #log = File.new("sinatra.log", "a+")
-  #LOGGER = Logger.new(log)
-#end
+configure do
+  log = File.new("logs/sinatra.log", "a+")
+  LOGGER = Logger.new(log)
+end
 
-#helpers do
-#  def logger
-#    LOGGER
-#  end
-#end
+helpers do
+  def logger
+    LOGGER
+  end
+end
 
-last_fm = LastFm.new('dfcca69a7d9650f940cb7983835caa4b', 'http://127.0.0.1:8118')
+#proxy = 'http://127.0.0.1:8118'
+proxy = false
+
+last_fm = LastFm.new('dfcca69a7d9650f940cb7983835caa4b')
 
 get '/' do
   haml :index

@@ -7,7 +7,7 @@ require 'json'
 
 class LastFm
 
-  def initialize(api_key, proxy)
+  def initialize(api_key, proxy = nil)
     @api_key = api_key
     @proxy = proxy
   end
