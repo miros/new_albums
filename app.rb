@@ -7,18 +7,8 @@ require 'pp'
 
 require 'helpers'
 
+require 'lib/models'
 require 'lib/last_fm'
-
-configure do
-  log = File.new(File.dirname(__FILE__)  + "/log/sinatra.log", "a+")
-  LOGGER = Logger.new(log)
-end
-
-helpers do
-  def logger
-    LOGGER
-  end
-end
 
 #proxy = 'http://127.0.0.1:8118'
 proxy = false
@@ -30,7 +20,6 @@ get '/' do
 end
 
 post '/groups' do
-
   @lastfm_login = params[:last_fm_login]
   @top_artists = last_fm.top_artists(:user => @lastfm_login)
 

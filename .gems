@@ -2,3 +2,5 @@ sinatra
 nokogiri
 json
 haml
+data_mapper
+dm-postgres-adapter
