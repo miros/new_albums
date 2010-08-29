@@ -3,7 +3,7 @@ require 'dm-core'
 
 DataMapper::Logger.new('log/db.log', :debug)
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:root@localhost/new_albums')
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres:/postgres:postgres@localhost/new_albums')
 
 
 class Artist
