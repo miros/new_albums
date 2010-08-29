@@ -16,7 +16,8 @@ class LastFm
 
   def top_artists(params)
     throw Exception.new('no :user param') unless params[:user]
-    request('user.getTopArtists', :user => params[:user])
+    top_artists = request('user.getTopArtists', :user => params[:user])
+    top_artists['topartists']['artist'].map {|artist| artist['name']}
   end
 
   private

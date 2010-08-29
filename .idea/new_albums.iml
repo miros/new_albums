@@ -15,6 +15,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.2.0, /usr/lib/ruby/gems/1.8/gems/addressable-2.2.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] extlib (v0.9.15, /usr/lib/ruby/gems/1.8/gems/extlib-0.9.15)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] dm-migrations (v1.0.0, /usr/lib/ruby/gems/1.8/gems/dm-migrations-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.3.1, /usr/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1)" level="application" />
   </component>
 </module>
 

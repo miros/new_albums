@@ -4,6 +4,7 @@ require 'sinatra'
 require 'haml'
 require 'logger'
 require 'pp'
+require 'date'
 
 require 'helpers'
 
@@ -22,6 +23,10 @@ end
 post '/groups' do
   @lastfm_login = params[:last_fm_login]
   @top_artists = last_fm.top_artists(:user => @lastfm_login)
+
+  @upcoming_albums = Album.all(:artist => {:name => @top_artists },
+                               :release_date.gt => Date.today,
+                               :order => :release_date.asc)
 
   haml :groups
 end

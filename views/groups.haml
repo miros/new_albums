@@ -1,3 +1,10 @@
 %h1= @lastfm_login
-%pre
-  = @top_artists.pretty_inspect
+%h2
+  Albums for you
+%ul#upcoming_albums
+  -@upcoming_albums.each do |album|
+    %li
+      %span.release_date= album.release_date
+      %span.artist_name= album.artist.name
+      \ -  
+      %span.album_name= album.name
