@@ -25,7 +25,7 @@ post '/groups' do
   @top_artists = last_fm.top_artists(:user => @lastfm_login)
 
   @upcoming_albums = Album.all(:artist => {:name => @top_artists },
-                               :release_date.gt => Date.today,
+                               #:release_date.gt => Date.today,
                                :order => :release_date.asc)
 
   haml :groups

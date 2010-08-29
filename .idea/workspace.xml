@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="417dbab0-2251-4219-87fe-03829401edb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models.rb" afterPath="$PROJECT_DIR$/lib/models.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="new_albums.iws" />
@@ -27,19 +26,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+            <state line="27" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="0.42739725">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/models.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="173" selection-end="173" vertical-scroll-proportion="0.46849316">
+            <state line="9" column="23" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,12 +64,12 @@
         <option value="$PROJECT_DIR$/lib/releases_creater.rb" />
         <option value="$PROJECT_DIR$/lib/releases_creator.rb" />
         <option value="$PROJECT_DIR$/lib/last_fm.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/lib/metacritic.rb" />
         <option value="$PROJECT_DIR$/views/groups.haml" />
         <option value="$PROJECT_DIR$/lib/tasks/cron.rake" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/lib/models.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -221,7 +220,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1280" height="721" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
@@ -229,7 +228,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18349358" sideWeight="0.65882355" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18349358" sideWeight="0.65882355" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -255,7 +254,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="scraping releases from metacritic" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql logging" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -272,6 +271,7 @@
     <MESSAGE value="format chnged to json" />
     <MESSAGE value="datamapper models created" />
     <MESSAGE value="scraping releases from metacritic" />
+    <MESSAGE value="sql logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -342,16 +342,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/lib/models.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+        <state line="9" column="23" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models.rb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="173" selection-end="173" vertical-scroll-proportion="0.46849316">
+        <state line="27" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="0.42739725">
           <folding />
         </state>
       </provider>
