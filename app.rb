@@ -25,7 +25,7 @@ end
 
 post '/groups' do
   @lastfm_login = params[:last_fm_login]
-  @top_artists = last_fm.top_artists(:user => @lastfm_login)
+  @top_artists = last_fm.artists(:user => @lastfm_login, :limit => (params[:artists_limit].to_i || 200))
 
   @top_artists = @top_artists.map {|name| name.downcase}
 

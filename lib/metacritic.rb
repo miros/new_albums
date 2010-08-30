@@ -15,7 +15,7 @@ class Metacritic
     releases = [];
 
     current_releases_date = nil;
-
+    
     upcoming_page.css('table.listtable')[0].css('tr').each do |tr|
       if (th = tr.at_css('th'))
         current_releases_date = Date.parse(th.content)

@@ -6,7 +6,7 @@ require 'pp'
 require 'json'
 
 class LastFm
-
+  
   def initialize(api_key, proxy = nil)
     @api_key = api_key
     @proxy = proxy
@@ -15,12 +15,42 @@ class LastFm
   API_URL = "http://ws.audioscrobbler.com/2.0/"
 
   def top_artists(params)
-    throw Exception.new('no :user param') unless params[:user]
-    top_artists = request('user.getTopArtists', :user => params[:user])
+    requires_params [:user], params
+
+    top_artists = request('user.getTopArtists', params)
     top_artists['topartists']['artist'].map {|artist| artist['name']}
   end
 
+  # !TODO refactor this crap
+
+  def artists(params)
+    requires_params [:user], params
+
+    artists = []
+
+    request_params = {:user => params[:user]}
+
+    info = request('library.getArtists', request_params.merge(:page => 1))
+    artists += info['artists']['artist'].map {|artist| artist['name']}
+
+    pages_count = info['artists']['@attr']['totalPages'].to_i
+
+    (2..pages_count).each do |page|
+      puts "requesting page #{page}"
+      info = request('library.getArtists', request_params.merge(:page => page))
+      artists += info['artists']['artist'].map {|artist| artist['name']}
+      break if params[:limit] && artists.size >= params[:limit]
+    end
+
+    artists.slice(0..params[:limit]) if params[:limit]
+
+  end
+
   private
+
+    def requires_params(params_required, params_given)
+      params_required.each {|param| throw Exception.new("no :#{param} param") unless params_given.has_key?(param) }
+    end
 
     def request(method_name, params)
       params ||= []
