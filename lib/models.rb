@@ -1,10 +1,9 @@
 require 'dm-core'
 
-
 DataMapper::Logger.new('log/db.log', :debug)
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres:/postgres:postgres@localhost/new_albums')
-
+db_url = 'postgres://postgres:postgres@localhost/new_albums'
+DataMapper.setup(:default, ENV['DATABASE_URL'] || db_url)
 
 class Artist
 
