@@ -24,6 +24,7 @@ class LastFm
 
   def artists(params)
     requires_params [:user], params
+    params[:limit] = 50 if params[:limit] == 0
 
     artists = []
 

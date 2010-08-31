@@ -1,6 +1,8 @@
-%h1= @lastfm_login
-%h2
-  Albums for you
+%h1= "Albums for you, #{@lastfm_login}"
+%h2 Recent:
+%ul#recent_albums
+  %li no
+%h2 Upcoming:
 %ul#upcoming_albums
   -@upcoming_albums.each do |album|
     %li
