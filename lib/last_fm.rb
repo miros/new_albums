@@ -21,7 +21,6 @@ class LastFm
     top_artists['topartists']['artist'].map {|artist| artist['name']}
   end
 
-  # !TODO refactor this crap
 
   def artists(params)
     requires_params [:user], params
@@ -29,21 +28,22 @@ class LastFm
     artists = []
 
     request_params = {:user => params[:user]}
+    current_page_num = 0;
 
-    info = request('library.getArtists', request_params.merge(:page => 1))
-    artists += info['artists']['artist'].map {|artist| artist['name']}
-
-    pages_count = info['artists']['@attr']['totalPages'].to_i
-
-    (2..pages_count).each do |page|
-      puts "requesting page #{page}"
-      info = request('library.getArtists', request_params.merge(:page => page))
-      artists += info['artists']['artist'].map {|artist| artist['name']}
+    loop do
       break if params[:limit] && artists.size >= params[:limit]
+
+      current_page_num += 1
+
+      info = request('library.getArtists', request_params.merge(:page => current_page_num))
+      artists += info['artists']['artist'].map {|artist| artist['name']}
+
+      pages_count = info['artists']['@attr']['totalPages'].to_i
+      
+      break if current_page_num >= pages_count
     end
 
     artists.slice(0..params[:limit]) if params[:limit]
-
   end
 
   private
