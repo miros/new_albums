@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="417dbab0-2251-4219-87fe-03829401edb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers.rb" afterPath="$PROJECT_DIR$/helpers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_album.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/style.css" afterPath="$PROJECT_DIR$/public/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/albums.haml" afterPath="$PROJECT_DIR$/views/albums.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/releases_creator.rb" afterPath="$PROJECT_DIR$/lib/releases_creator.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -30,37 +27,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="releases_creator.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="releases_creator.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/releases_creator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="albums.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/albums.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="26" selection-start="276" selection-end="276" vertical-scroll-proportion="0.42222223">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_album.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_album.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+            <state line="11" column="78" selection-start="394" selection-end="394" vertical-scroll-proportion="0.33174604">
               <folding />
             </state>
           </provider>
@@ -82,7 +52,6 @@
         <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/lib/i_tunes.rb" />
         <option value="$PROJECT_DIR$/views/index.haml" />
-        <option value="$PROJECT_DIR$/lib/releases_creator.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/lib/models.rb" />
         <option value="$PROJECT_DIR$/log/db.log" />
@@ -92,6 +61,7 @@
         <option value="$PROJECT_DIR$/views/_album.haml" />
         <option value="$PROJECT_DIR$/views/albums.haml" />
         <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/lib/releases_creator.rb" />
       </list>
     </option>
   </component>
@@ -150,7 +120,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,7 +222,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="messages in rake scrap task" />
+    <option name="LAST_COMMIT_MESSAGE" value="album covers display; partial support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -279,6 +249,7 @@
     <MESSAGE value="display of recent albums" />
     <MESSAGE value=".gems updated" />
     <MESSAGE value="messages in rake scrap task" />
+    <MESSAGE value="album covers display; partial support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -364,30 +335,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/releases_creator.rb">
+    <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="14" column="26" selection-start="276" selection-end="276" vertical-scroll-proportion="0.42222223">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_album.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+        <state line="6" column="12" selection-start="166" selection-end="166" vertical-scroll-proportion="0.18095239">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/albums.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+        <state line="3" column="3" selection-start="73" selection-end="73" vertical-scroll-proportion="0.09047619">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/style.css">
+    <entry file="file://$PROJECT_DIR$/lib/releases_creator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="276" selection-end="276" vertical-scroll-proportion="0.42222223">
+        <state line="11" column="78" selection-start="394" selection-end="394" vertical-scroll-proportion="0.33174604">
           <folding />
         </state>
       </provider>

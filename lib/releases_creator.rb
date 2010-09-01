@@ -9,7 +9,7 @@ class ReleasesCreator
               artist.albums.new(:name => release[:album])
 
       album.release_date = release[:release_date]
-      album.cover_art_url = release[:cover_art_url]
+      album.cover_art_url = release[:cover_art_url] if release[:cover_art_url] 
       album.save
 
     end
