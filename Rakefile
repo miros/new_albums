@@ -15,9 +15,13 @@ end
 
 task :scrap do
   require 'lib/metacritic'
+  require 'lib/i_tunes'
   require 'lib/releases_creator'
 
   releases = Metacritic.new.upcoming_releases
+  ReleasesCreator.new.create(releases)
+
+  releases = ITunes.new.recent_releases
   ReleasesCreator.new.create(releases)
 end
 

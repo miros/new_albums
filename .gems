@@ -5,3 +5,4 @@ haml
 data_mapper
 dm-postgres-adapter
 pauldix-feedzirra --source http://gems.github.com
+activesupport

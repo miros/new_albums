@@ -16,6 +16,12 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] extlib (v0.9.15, /usr/lib/ruby/gems/1.8/gems/extlib-0.9.15)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] dm-migrations (v1.0.0, /usr/lib/ruby/gems/1.8/gems/dm-migrations-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.3.1, /usr/lib/ruby/gems/1.8/gems/nokogiri-1.4.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pauldix-feedzirra (v0.0.18, /usr/lib/ruby/gems/1.8/gems/pauldix-feedzirra-0.0.18)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pauldix-sax-machine (v0.0.14, /usr/lib/ruby/gems/1.8/gems/pauldix-sax-machine-0.0.14)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] taf2-curb (v0.5.4.0, /usr/lib/ruby/gems/1.8/gems/taf2-curb-0.5.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /usr/lib/ruby/gems/1.8/gems/builder-2.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v2.3.8, /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mdalessio-dryopteris (v0.1.2, /usr/lib/ruby/gems/1.8/gems/mdalessio-dryopteris-0.1.2)" level="application" />
   </component>
 </module>
 

@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="417dbab0-2251-4219-87fe-03829401edb3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.rb" afterPath="$PROJECT_DIR$/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.haml" afterPath="$PROJECT_DIR$/views/layout.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/new_albums.iml" afterPath="$PROJECT_DIR$/.idea/new_albums.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gems" afterPath="$PROJECT_DIR$/.gems" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models.rb" afterPath="$PROJECT_DIR$/lib/models.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/groups.haml" afterPath="$PROJECT_DIR$/views/groups.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/last_fm.rb" afterPath="$PROJECT_DIR$/lib/last_fm.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/i_tunes.rb" afterPath="$PROJECT_DIR$/lib/i_tunes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.haml" afterPath="$PROJECT_DIR$/views/index.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/albums.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/releases_creator.rb" afterPath="$PROJECT_DIR$/lib/releases_creator.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/groups.haml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="new_albums.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="new_albums.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +37,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="albums.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/albums.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="19" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+            <state line="38" column="46" selection-start="816" selection-end="816" vertical-scroll-proportion="0.6719425">
               <folding />
             </state>
           </provider>
@@ -45,16 +58,7 @@
       <file leaf-file-name="models.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/models.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="groups.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/groups.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="0.02733813">
+            <state line="42" column="50" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,22 +74,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/releases_scraper.rb" />
-        <option value="$PROJECT_DIR$/lib/releases_creater.rb" />
-        <option value="$PROJECT_DIR$/lib/releases_creator.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/cron.rake" />
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/.gems" />
         <option value="$PROJECT_DIR$/.gitigore" />
         <option value="$PROJECT_DIR$/lib/metacritic.rb" />
-        <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/views/layout.haml" />
-        <option value="$PROJECT_DIR$/views/index.haml" />
-        <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/lib/last_fm.rb" />
+        <option value="$PROJECT_DIR$/views/groups.haml" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/test.rb" />
+        <option value="$PROJECT_DIR$/lib/i_tunes.rb" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/.gems" />
+        <option value="$PROJECT_DIR$/views/index.haml" />
+        <option value="$PROJECT_DIR$/lib/releases_creator.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/lib/models.rb" />
-        <option value="$PROJECT_DIR$/views/groups.haml" />
+        <option value="$PROJECT_DIR$/log/db.log" />
+        <option value="$PROJECT_DIR$/views/albums.haml" />
       </list>
     </option>
   </component>
@@ -115,6 +119,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -157,6 +162,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_albums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -164,15 +197,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="preferences.editor" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -228,12 +260,12 @@
     <frame x="0" y="26" width="1600" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32825485" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17410715" sideWeight="0.6606648" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18303572" sideWeight="0.6620499" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -241,7 +273,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -260,7 +292,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="little refactoring and bug fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="big fixed; code refactored; design changed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -283,103 +315,106 @@
     <MESSAGE value="db migrated to postgres" />
     <MESSAGE value="requesting all artists from library not only top 50" />
     <MESSAGE value="little refactoring and bug fixing" />
+    <MESSAGE value="big fixed; code refactored; design changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.033450704" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="158" selection-end="158" vertical-scroll-proportion="0.30105633" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/releases_creator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="77" selection-end="77" vertical-scroll-proportion="0.13380282" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="372" selection-end="372" vertical-scroll-proportion="0.7359155" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gems">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="59" selection-end="70" vertical-scroll-proportion="0.23170732" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitigore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/metacritic.rb">
+    <entry file="file://$PROJECT_DIR$/views/layout.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="393" selection-end="393" vertical-scroll-proportion="0.51942444" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="167" selection-end="167" vertical-scroll-proportion="0.08201439" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/db.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="783" column="14" selection-start="109350" selection-end="109350" vertical-scroll-proportion="0.41911766">
-          <folding />
-        </state>
+        <state line="4" column="22" selection-start="64" selection-end="64" vertical-scroll-proportion="0.10935252" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="182" selection-end="202" vertical-scroll-proportion="0.2733813">
-          <folding />
-        </state>
+        <state line="12" column="22" selection-start="240" selection-end="240" vertical-scroll-proportion="0.32805756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.haml">
+    <entry file="file:///usr/lib/ruby/gems/1.8/gems/pauldix-feedzirra-0.0.18/lib/feedzirra/parser/itunes_rss.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="64" selection-end="64" vertical-scroll-proportion="0.10935252">
+        <state line="0" column="16" selection-start="7" selection-end="16" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/i_tunes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="854" selection-end="854" vertical-scroll-proportion="0.8661765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/metacritic.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="393" selection-end="393" vertical-scroll-proportion="0.35539567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="27" selection-start="460" selection-end="460" vertical-scroll-proportion="0.6561151" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="0.19136691">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.16402878">
+        <state line="1" column="27" selection-start="39" selection-end="39" vertical-scroll-proportion="0.02733813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/releases_creator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="384" selection-end="384" vertical-scroll-proportion="0.32805756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24604316">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/last_fm.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="-0.0029411765">
+        <state line="27" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.75441176">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/log/db.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+        <state line="813" column="23" selection-start="144125" selection-end="144125" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/models.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+        <state line="42" column="50" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/groups.haml">
+    <entry file="file://$PROJECT_DIR$/views/albums.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="51" selection-end="51" vertical-scroll-proportion="0.02733813">
+        <state line="16" column="19" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="46" selection-start="816" selection-end="816" vertical-scroll-proportion="0.6719425">
           <folding />
         </state>
       </provider>

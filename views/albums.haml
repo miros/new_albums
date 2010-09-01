@@ -1,7 +1,12 @@
 %h1= "Albums for you, #{@lastfm_login}"
 %h2 Recent:
 %ul#recent_albums
-  %li no
+  -@recent_albums.each do |album|
+    %li
+      %span.release_date= album.release_date
+      %span.artist_name= album.artist.name
+      \ -
+      %span.album_name= album.name
 %h2 Upcoming:
 %ul#upcoming_albums
   -@upcoming_albums.each do |album|

@@ -1,3 +1,4 @@
+require 'active_support'
 require 'dm-core'
 
 DataMapper::Logger.new('log/db.log', :debug)
@@ -24,6 +25,7 @@ class Album
   property :id, Serial
   property :name, String, :length => 0..255, :index => true
   property :release_date, Date
+  property :cover_art_url, String, :length => 0..255
 
   belongs_to :artist
 
@@ -33,6 +35,10 @@ class Album
 
   def self.upcoming()
     all(:release_date.gt => Date.today)
+  end
+
+  def self.recent(period = 3.month)
+    all(:release_date.lte => Date.today, :release_date.gte => (Date.today - period))
   end
 
   def self.ordered_by_date()
