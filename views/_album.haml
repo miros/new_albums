@@ -1,0 +1,7 @@
+%li
+  -if album.cover_art_url
+    %img{:src => album.cover_art_url}
+  %span.release_date= album.release_date
+  %span.artist_name= album.artist.name
+  \ -
+  %span.album_name= album.name
