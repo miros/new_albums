@@ -4,4 +4,4 @@ json
 haml
 data_mapper
 dm-postgres-adapter
-do_postgres
+pauldix-feedzirra --source http://gems.github.com
