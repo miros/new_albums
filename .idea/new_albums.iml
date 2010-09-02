@@ -22,6 +22,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /usr/lib/ruby/gems/1.8/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v2.3.8, /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mdalessio-dryopteris (v0.1.2, /usr/lib/ruby/gems/1.8/gems/mdalessio-dryopteris-0.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] awesome_print (v0.2.1, /usr/lib/ruby/gems/1.8/gems/awesome_print-0.2.1)" level="application" />
   </component>
 </module>
 

@@ -63,6 +63,7 @@ class NewAlbums < Sinatra::Base
 
     @top_artists = @last_fm.artists(:user => @lastfm_login, :limit => (params[:artists_limit].to_i))
     @top_artists = @top_artists.map {|name| name.downcase}
+    @top_artists.reject {|artist| artist.downcase.include?('various') && artist.downcase.include?('artists') }
 
     @recent_albums = []
     @upcoming_albums = []
