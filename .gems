@@ -6,3 +6,4 @@ data_mapper
 dm-postgres-adapter
 activesupport -v 2.3.8
 pauldix-feedzirra --source http://gems.github.com
+awesome_print
