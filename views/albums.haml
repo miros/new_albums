@@ -1,7 +1,7 @@
 %h1= "Albums for you, #{@lastfm_login}"
 %h2 Recent:
-%ul#recent_albums
+%ul#recent_albums.albums
   =partial(:album, :collection => @recent_albums)
 %h2 Upcoming:
-%ul#upcoming_albums
+%ul#upcoming_albums.albums
   =partial(:album, :collection => @upcoming_albums)

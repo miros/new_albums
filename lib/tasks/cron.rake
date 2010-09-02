@@ -1,0 +1,1 @@
+task :cron => [:scrap, 'scrap:covers']

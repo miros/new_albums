@@ -3,6 +3,7 @@ require 'net/http'
 require 'cgi'
 require 'uri'
 require 'pp'
+require 'ap'
 require 'json'
 
 class LastFm
@@ -14,13 +15,27 @@ class LastFm
 
   API_URL = "http://ws.audioscrobbler.com/2.0/"
 
+  def album_info(params)
+    requires_params [:artist, :album], params
+
+    album_info = request('album.getInfo', params)
+    return nil if album_info['error']
+
+    cover_art = album_info['album']['image'].find { |image| image['size'] == 'medium' && image['#text'].strip != '' }
+
+    {:artist => album_info['album']['artist'],
+     :name => album_info['album']['name'],
+     :release_date => album_info['album']['releasedate'],
+     :cover_art => (cover_art['#text'] if cover_art)}
+  end
+
+
   def top_artists(params)
     requires_params [:user], params
 
     top_artists = request('user.getTopArtists', params)
     top_artists['topartists']['artist'].map {|artist| artist['name']}
   end
-
 
   def artists(params)
     requires_params [:user], params

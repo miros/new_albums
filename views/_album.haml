@@ -1,6 +1,6 @@
 %li
-  -if album.cover_art_url
-    %img{:src => album.cover_art_url}
+  %img{:src => album.cover_art_url || '/img/album_cover_stub.jpg' , :width => 100, :height => 100 }
+  %span.cover_art_stub
   %span.release_date= album.release_date
   %span.artist_name= album.artist.name
   \ -

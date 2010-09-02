@@ -1,16 +1,59 @@
-#login_form {
-  width: 170px;
-  height: 120px;
-  padding: 10px;
-  position:absolute;
-  top: 30%;
-  left: 50%;
-  margin-left: -95px;
-  margin-top: -70px;
-  border: black solid 1px;
-  border-radius: 30px;
-  box-shadow: 30px 30px 70px black;
+body {
+    background-color: #4B7399;
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 14px;
 }
+
+a img {
+    border: none;
+}
+
+a {
+    color: #0000FF;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px 40px;
+    border: solid 1px black;
+    margin-top: 20px;
+}
+
+#login_form {
+    width: 170px;
+    height: 120px;
+    padding: 10px;
+    position:relative;
+    left: 50%;
+    margin-left: -95px;
+    border: black solid 1px;
+    border-radius: 30px;
+    box-shadow: 30px 30px 70px black;
+}
+
+
 li img {
     vertical-align: middle;
+}
+
+ul.albums {
+    list-style: none;
+}
+
+ul.albums li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.release_date {
+    font-weight: bold;
 }

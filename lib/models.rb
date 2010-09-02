@@ -33,7 +33,7 @@ class Album
     all(:artist => Artist.all(:conditions => ["LOWER(name) in ?", artists]))
   end
 
-  def self.upcoming()
+  def self.upcoming
     all(:release_date.gt => Date.today)
   end
 
@@ -41,8 +41,12 @@ class Album
     all(:release_date.lte => Date.today, :release_date.gte => (Date.today - period))
   end
 
-  def self.ordered_by_date()
+  def self.ordered_by_date
     all(:order => :release_date.asc)
+  end
+
+  def self.without_covers
+    all(:cover_art_url => nil)
   end
 
 end

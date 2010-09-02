@@ -1,14 +1,10 @@
-configure do
-  log = File.new(File.dirname(__FILE__)  + "/log/sinatra.log", "a+")
-  LOGGER = Logger.new(log)
-end
+module Sinatra::Logger
 
-helpers do
   def logger
-    LOGGER
+    @logger ||= Logger.new(File.dirname(__FILE__)  + "/log/sinatra.log")
   end
-end
 
+end
 
 # stolen from http://github.com/cschneid/irclogger/blob/master/lib/partials.rb
 #   and made a lot more robust by me
@@ -31,4 +27,3 @@ module Sinatra::Partials
   end
 end
 
-helpers Sinatra::Partials
