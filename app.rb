@@ -61,7 +61,12 @@ class NewAlbums < Sinatra::Base
 
     halt 'You should enter your login!' unless (@lastfm_login && !@lastfm_login.empty?)
 
-    @top_artists = @last_fm.artists(:user => @lastfm_login, :limit => (params[:artists_limit].to_i))
+    begin
+      @top_artists = @last_fm.artists(:user => @lastfm_login, :limit => (params[:artists_limit].to_i))
+    rescue LastFm::LastFmException => exc
+      halt "An error occured: #{exc.message}"
+    end
+
     @top_artists = @top_artists.map {|name| name.downcase}
     @top_artists.reject {|artist| artist.downcase.include?('various') && artist.downcase.include?('artists') }
 

@@ -7,13 +7,17 @@ require 'ap'
 require 'json'
 
 class LastFm
-  
+
+  class LastFmException < Exception; end
+
   def initialize(api_key, proxy = nil)
     @api_key = api_key
     @proxy = proxy
   end
 
   API_URL = "http://ws.audioscrobbler.com/2.0/"
+
+  ERROR_LIBRARY_NO_USER = 6;
 
   def album_info(params)
     requires_params [:artist, :album], params
@@ -51,12 +55,10 @@ class LastFm
 
       current_page_num += 1
 
-      info = request('library.getArtists', request_params.merge(:page => current_page_num))
-      artists += info['artists']['artist'].map {|artist| artist['name']}
+      info = library_get_artists(request_params.merge(:page => current_page_num))
+      artists += info[:artists]
 
-      pages_count = info['artists']['@attr']['totalPages'].to_i
-      
-      break if current_page_num >= pages_count
+      break if current_page_num >= info[:pages]
     end
 
     artists.slice(0..params[:limit]) if params[:limit]
@@ -64,8 +66,20 @@ class LastFm
 
   private
 
+    def library_get_artists(params)
+      info = request('library.getArtists', params)
+
+      case info['error']
+        when ERROR_LIBRARY_NO_USER
+          raise LastFmException.new('No such user!')
+      end
+
+      {:artists => info['artists']['artist'].map {|artist| artist['name']},
+       :pages => info['artists']['@attr']['totalPages'].to_i}
+    end
+
     def requires_params(params_required, params_given)
-      params_required.each {|param| throw Exception.new("no :#{param} param") unless params_given.has_key?(param) }
+      params_required.each {|param| raise LastFmException.new("no :#{param} param") unless params_given.has_key?(param) }
     end
 
     def request(method_name, params)
@@ -76,7 +90,13 @@ class LastFm
 
       api_url = URI.parse(API_URL)
       response = http_get(api_url.host, api_url.path, params)
-      JSON.parse(response);
+
+      begin
+        JSON.parse(response);
+      rescue JSON::ParserError => exc
+         raise LastFmException.new(exc.message)
+      end
+
     end
 
 
