@@ -4,6 +4,8 @@ require 'haml'
 require 'logger'
 require 'pp'
 require 'date'
+
+gem 'activesupport', '= 2.3.8'
 require 'active_support'
 
 require 'helpers'

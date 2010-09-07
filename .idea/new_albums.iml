@@ -3,6 +3,14 @@
   <component name="DBNavigator.Module.ConnectionManager">
     <connections />
   </component>
+  <component name="GemRequirementsHolder" version="2">
+    <requirement>
+      <requirement>
+        <dependency name="activesupport" version="2.3.8" bound="EQUAL" git="false" />
+      </requirement>
+      <source from="app.rb" />
+    </requirement>
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
